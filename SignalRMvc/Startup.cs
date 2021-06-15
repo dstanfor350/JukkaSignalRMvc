@@ -38,6 +38,9 @@ namespace SignalRMvc
             );
 
             app.UseWebApi(config);
+      
+            // Any connection or hub wire up and configuration should go here
+            app.MapSignalR();
         }
     }
 }

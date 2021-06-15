@@ -39,19 +39,12 @@ namespace SignalRMvc.Controllers
         //}
 
         // POST api/values
-        //[Route("{name}")]
-        //[HttpPost]
-        ////public IHttpActionResult Post([FromBody]  string name)
-        ////public IHttpActionResult Post(string name)
         [HttpPost]
         [Route()]
-        //public IHttpActionResult Post([FromBody] WeatherForecast weather)
-        //public IHttpActionResult Post([FromBody] JsonName name)
         public IHttpActionResult Post([FromBody] WeatherForecast weather)
         {
             // https://stackoverflow.com/questions/13284460/asp-net-webapi-not-receiving-post-data
             //string body = Request.Content.ReadAsStringAsync().Result;
-            //var body = Request.Content.ReadAsStringAsync().Result;
 
             //return Ok(new string[] { "Post", "value1", "value2" });
             return Ok(weather);
